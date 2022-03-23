@@ -1,0 +1,58 @@
+class Height{
+    int feet;
+    int inches;
+    Height(int feet,int inches){
+        this.feet=feet;
+        this.inches=inches;
+    }
+    @Override
+    public String toString() {
+        return "Height [feet=" + feet + ", inches=" + inches + "]";
+    }
+}
+abstract class Student{
+    String name;
+    Height height;
+    String branch;
+    Student(String name,Height height){
+        this.name=name;
+        this.height=height;
+    }
+    public static int compareByHeight (Student s1, Student s2){
+        if (s1.height)
+    }
+
+}
+class EEEStudent extends Student{
+    String name;
+    Height height;
+    String branch;
+    EEEStudent(String name,Height height,String branch){
+           super(name,height);
+           this.branch=branch;
+    }
+}
+class ECEStudent extends Student{
+    String name;
+    Height height;
+    String branch;
+    ECEStudent(String name,Height height,String branch){
+           super(name,height);
+           this.branch=branch;
+    }
+}
+class CSEStudent extends Student{
+    String name;
+    Height height;
+    String branch;
+    CSEStudent(String name,Height height,String branch){
+           super(name,height);
+           this.branch=branch;
+    }
+}
+class StudentAdminstration{
+    Student[] students;
+    StudentAdminstration(Student[] students){
+        this.students=students;
+    }
+}
